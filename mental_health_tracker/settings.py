@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-ee2dt@)qo#7h8v^!l4#)@-gcu=mm*&7qdea29@bf@05_izl_&8
 PRODUCTION = os.getenv("PRODUCTION", False)
 DEBUG = not PRODUCTION
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "christian-yudistira-mentalhealthtracker.pbp.cs.ui.ac.id"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "christian-yudistira-Mentalhealthtracker.pbp.cs.ui.ac.id"]
 
 
 
@@ -125,4 +125,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1","http://christian-yudistira-mentalhealthtracker.pbp.cs.ui.ac.id", "https://christian-yudistira-mentalhealthtracker.pbp.cs.ui.ac.id"]
+CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1","http://christian-yudistira-Mentalhealthtracker.pbp.cs.ui.ac.id", "https://christian-yudistira-Mentalhealthtracker.pbp.cs.ui.ac.id"]
