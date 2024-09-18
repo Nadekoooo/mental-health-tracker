@@ -1,9 +1,11 @@
 from django.db import models
 import uuid  # tambahkan baris ini di paling atas
+from django.contrib.auth.models import User
 
 # Create your models here.
 class MoodEntry(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)  # tambahkan baris ini
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     mood = models.CharField(max_length=255)
     time = models.DateField(auto_now_add=True)
     feelings = models.TextField()
